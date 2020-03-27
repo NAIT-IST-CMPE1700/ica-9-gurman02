@@ -12,6 +12,6 @@ typedef struct data
 } student;
 
 //method for adding new elements to the list array
-//void addElement(student* head, char name[], int id, int mark);
+void addElement(student* head, char name[], int id, int mark);
 
 #endif // !header.h
