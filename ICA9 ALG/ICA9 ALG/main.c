@@ -151,14 +151,14 @@ int main(int argc, char** argv)
             scanf_s("%d", &userInput, sizeof(int));
             printf("\n");
 
-            printf("Name | ID | Mark\n");
+            printf("Name | Mark | Rank\n");
 
             current = &idSort;
             for (int i = 0; i < 10; i++)
             {
                 if (current->id == userInput)
                 {
-                    printf("%s %d %d\n", current->name, current->id, current->mark);
+                    printf("%s %d %d\n", current->name, current->mark, i+1);
                 }
                 current = current->next;
             }
