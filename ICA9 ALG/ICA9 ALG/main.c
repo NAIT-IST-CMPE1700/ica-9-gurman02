@@ -185,6 +185,10 @@ int main(int argc, char** argv)
         }
     }
 
+    free(idSort.next);
+
+    free(markSort.next);
+
 	exit(EXIT_SUCCESS);
 }
 
@@ -202,4 +206,17 @@ void addElement(student* head, char name[], int id, int mark) {
     current->next->id = id;
     current->next->mark = mark;
     current->next->next = NULL;
+}
+
+void Free(student* head)
+{
+    if (head)
+    {
+        Free(head->next);
+    }
+     
+    if (head)
+    {
+        free(head);
+    }
 }

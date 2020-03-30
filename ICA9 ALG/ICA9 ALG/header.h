@@ -13,5 +13,6 @@ typedef struct data
 
 //method for adding new elements to the list array
 void addElement(student* head, char name[], int id, int mark);
+void Free(student* head);
 
 #endif // !header.h
